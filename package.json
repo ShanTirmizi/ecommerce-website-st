@@ -1,11 +1,13 @@
 {
   "name": "ecommerce-website",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "express": "^4.17.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -13,6 +15,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "run": "nodemon --watch backend --exec node --experimental-modules backend/server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,5 +38,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShanTirmizi/ecommerce-website-st.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShanTirmizi/ecommerce-website-st/issues"
+  },
+  "homepage": "https://github.com/ShanTirmizi/ecommerce-website-st#readme"
 }
